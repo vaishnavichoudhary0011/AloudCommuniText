@@ -1,0 +1,92 @@
+body{
+background-image: radial-gradient( circle farthest-corner at 11.7% 80.6%,  rgba(249,185,255,1) 0%, rgba(177,172,255,1) 49.3%, rgba(98,203,255,1) 89% );
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #f16334;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Verdana;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+       border: 1px solid #ff0000;
+}
+select {
+    display: block;
+}
+button, select {
+    text-transform: none;
+}
+input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    width: 50%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+        border: 1px solid #ff0000;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+table td, table th {
+    padding: 15px;
+    line-height: 1.5;
+    vertical-align: top;
+    border: 1px solid #000000;
+    
+}
+textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Verdana;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+}
+
+postId {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Verdana;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+       border: 1px solid #ff0000;
+}
+[type=submit], button {
+    display: inline-block;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+
+}

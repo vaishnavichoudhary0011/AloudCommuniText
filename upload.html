@@ -1,0 +1,158 @@
+
+<html>
+   <head>
+   <link rel ="stylesheet" href="upload.css">
+   </br></br>
+   <h1 style="color: #000;
+    font-family: Montserrat,Sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.2em;"><center>                        Aloud CommuniText                              </center>  </h1>
+<center><span><script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/fpipqhrr.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#7166ee"
+    stroke="8"
+    style="width:250px;height:250px">
+</lord-icon></span></center>
+
+
+   </head>
+</br></br>
+   <body>
+   
+   
+
+<div id="content"><center>
+<span style="font-family:Montserrat,Sans-serif; text-transform: uppercase;"> Select Voice: </span>
+</br></br>
+<select id="voiceSelected" style="font-family:Montserrat,Sans-serif;text-transform: uppercase;">
+<optgroup label="English,US">
+<option value="Joanna"> Joanna [English,US]</option>
+<option value="Matthew"> Matthew [English,US]</option>
+<option value="Salli"> Salli [English,US]</option>
+<option value="Kimberly">Kimberly[English,US]</option>
+<option value="Kendra"> Kendra [English,US]</option>
+<option value="Ivy"> Ivy [English,US]</option>
+<option value="Justin"> Justin [English,US]</option>
+<option value="Joey"> Joey [English,US]</option>
+</optgroup><optgroup label="English,Welsh">
+<option value="Geraint"> Anson [English,Welsh]</option>
+</optgroup><optgroup label="English,British">
+<option value="Emma"> Emma [English,British]</option>
+<option value="Amy"> Amy [English,British]</option>
+<option value="Brian"> Brian [English,British]</option>
+</optgroup><optgroup label="English,Indian">
+<option value="Raveena"> Raveena  [English,Indian]</option>
+<option value="Aditi"> Aditi [English,Indian]</option>
+</optgroup><optgroup label="Arabic">
+<option value="Zeina"> Zeina  [Arabic]</option></optgroup>
+<optgroup label="English,Australian">
+<option value="Nicole"> Nicole [English,Australian]</option>
+<option value="Russell"> Russell [English,Australian]</option>
+</optgroup><optgroup label="Hindi">
+<option value="Aditi"> Aditi  [Hindi]</option>
+</optgroup><optgroup label="Chinese,Mandarin">
+<option value="Zhiyu"> Zhiyu [Chinese,Mandarin]</option>
+</optgroup><optgroup label="Danish">
+<option value="Naja"> Naja [Danish]</option>
+<option value="Mads"> Mads [Danish]</option>
+</optgroup><optgroup label="Dutch">
+<option value="Lotte"> Lotte [Dutch]</option>
+<option value="Ruben"> Ruben [Dutch]</option>
+</optgroup><optgroup label="French">
+<option value="Lea"> Léa [French]</option>
+<option value="Céline"> Céline  [French]</option>
+<option value="Mathieu"> Mathieu [French]</option>
+<option value="Chantal"> Chantal [French,Canadian]</option>
+</optgroup><optgroup label="German">
+<option value="Vicki"> Vicki [German]</option>
+<option value="Marlene"> Marlene [German]</option>
+<option value="Hans"> Hans [German]</option>
+</optgroup><optgroup label="Icelandic">
+<option value="Dora"> Dóra [Icelandic]</option>
+<option value="Karl"> Karl [Icelandic]</option>
+</optgroup><optgroup label="Italian">
+<option value="Carla"> Carla [Italian]</option>
+<option value="Giorgio"> Giorgio [Italian]</option>
+</optgroup><optgroup label="Japanese">
+<option value="Mizuki"> Mizuki [Japanese]</option>
+<option value="Takumi"> Takumi [Japanese]</option>
+</optgroup><optgroup label="Korean">
+<option value="Seoyeon"> Seoyeon [Korean]</option>
+</optgroup><optgroup label="Norwegian">
+<option value="Liv"> Liv [Norwegian]</option>
+</optgroup><optgroup label="Polish">
+<option value="Ewa"> Ewa [Polish]</option>
+<option value="Maja"> Maja [Polish]</option>
+<option value="Jan"> Jan [Polish]</option>
+<option value="Jacek"> Jacek [Polish]</option>
+</optgroup><optgroup label="Portuguese">
+<option value="Ines"> Inês [Portuquese]</option>
+<option value="Cristiano">Cristiano[Portuquese]</option>
+</optgroup><optgroup label="Portuquese,Brazilian">
+<option value="Vitoria"> Vitória [Portuquese,Brazilian]</option>
+<option value="Ricardo"> Ricardo [Portuquese,Brazilian]</option>
+</optgroup><optgroup label="Romanian">
+<option value="Carmen"> Carmen [Romanian]</option>
+</optgroup><optgroup label="Russian">
+<option value="Tatyana"> Tatyana [Russian]</option>
+<option value="Maxim"> Maxim [Russian]</option>
+</optgroup><optgroup label="Spanish,Castilian">
+<option value="Conchita">Conchita[Spanish,Castilian]</option>
+<option value="Enrique"> Enrique [Spanish,Castilian]</option>
+</optgroup><optgroup label="Spanish,US">
+<option value="Penelope">Penélope[Spanish,US]</option>
+<option value="Miguel"> Miguel [Spanish,US]</option>
+</optgroup><optgroup label="Swedish">
+<option value="Astrid"> Astrid [Swedish]</option>
+</optgroup><optgroup label="Turkish">
+<option value="Filiz"> Filiz [Turkish]</option>
+</optgroup><optgroup label="Welsh">
+<option value="Gwyneth"> Gwyneth [Welsh]</option>
+</optgroup>
+</select>
+</center> 
+
+<center><textarea id="postText"></textarea></center>
+<center><span id="charCounter" style="font-family:muli, sans-serif;text-transform: uppercase;">Characters: 0</span></center>
+<br><br>
+
+<center><input type="submit" value="Say it !" id="sayButton" class="buttons" style="color: #000; font-family: Montserrat,Sans-serif;text-transform: uppercase;"></center>
+<br><br>
+
+<center style="font-family:muli, sans-serif;"><span id="postIDreturned"></span></center>
+<br><br>
+
+<span style="font-family:Montserrat,Sans-serif;text-transform: uppercase;backg" ><center>Enter Post ID to get audio:</center> <center></span> <input type="text" id="postId" class="textarea"></center> </br></br> <center><input type="submit" class="buttons" value="Get 🔊" id="searchButton" style="color: #000;font-family: Montserrat,Sans-serif;text-transform: uppercase;"></center>
+<br/>
+</div>
+<br/><br/>
+
+<center> <table id="posts" style="font-family:muli, sans-serif;" >
+<colgroup>
+<col style="width:10%">
+<col style="width:7%">
+<col style="width:45%">
+<col style="width:8%">
+<col style="width:30%">
+</colgroup>
+<tbody>
+<tr>
+<th>Post ID</th>
+<th>Voice</th>
+<th>Post</th>
+<th>Status</th>
+<th>Player</th>
+</tr>
+ </tbody>
+ </table>
+</center>
+
+<script src="scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+   </body>
+</html>   
+ 
